@@ -1,0 +1,239 @@
+/* ============ Variáveis ============ */
+:root {
+  /* Cores — o mundo do extintor: cilindro vermelho, etiqueta de aço, manômetro */
+  --vermelho: #c62828; /* vermelho segurança; branco sobre ele: 5.62:1 */
+  --vermelho-escuro: #8e1b1b;
+  --vermelho-claro: #fdecec;
+  --amarelo: #f9b208;
+  /* Verde do manômetro; texto branco sobre ele mede 5.00:1 */
+  --verde: #17803f;
+  --verde-escuro: #11602f;
+  --verde-claro: #e3f5ea;
+  --grafite: #23262b;
+  --texto: #23262b;
+  --texto-suave: #575d66;
+  --fundo: #ffffff;
+  --aco: #eef0f2; /* cinza frio da etiqueta do cilindro */
+  --borda: #d9dde2;
+  --borda-campo: #8a8a85; /* 3.47:1 sobre branco: contorno de campo visível */
+  --foco: #23262b; /* anel de foco em fundos claros; seções escuras redefinem */
+
+  /* Barlow nasceu das placas de rodovia: tipografia de sinalização */
+  --fonte: 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fonte-titulo: 'Barlow Condensed', 'Arial Narrow', var(--fonte);
+
+  /* Escala tipográfica */
+  --texto-xs: 0.8125rem; /* 13px – legal */
+  --texto-sm: 0.875rem; /* 14px – apoio, erros */
+  --texto-md: 0.9375rem; /* 15px – metadados */
+  --texto-base: 1.0625rem; /* 17px – corpo (Barlow desenha pequeno) */
+  --texto-lg: 1.1875rem; /* 19px – títulos de linha, introduções */
+  --texto-xl: 1.5rem; /* 24px – marca */
+  --titulo-secao: clamp(2.25rem, 5vw, 3.25rem);
+  --titulo-hero: clamp(3rem, 9vw, 5.75rem);
+
+  --raio: 10px;
+  --largura-max: 1160px;
+  --altura-header: 68px;
+}
+
+/* ============ Reset ============ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: var(--texto-base);
+  line-height: 1.55;
+  color: var(--texto);
+  background: var(--fundo);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+}
+
+h1,
+h2 {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0 0 1em;
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 2px;
+}
+
+section[id] {
+  scroll-margin-top: var(--altura-header);
+}
+
+/* ============ Utilitários ============ */
+.container {
+  width: 100%;
+  max-width: var(--largura-max);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.secao {
+  padding-block: 72px;
+}
+
+.secao--aco {
+  background: var(--aco);
+}
+
+.secao__cabecalho {
+  max-width: 62ch;
+  margin-bottom: 40px;
+}
+
+.secao__titulo {
+  font-size: var(--titulo-secao);
+}
+
+.secao__texto {
+  color: var(--texto-suave);
+  max-width: 62ch;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pular-conteudo {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--grafite);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.pular-conteudo:focus {
+  top: 8px;
+}
+
+/* ============ Botões ============ */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 50px;
+  padding: 12px 26px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: var(--texto-base);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    border-color 0.15s,
+    color 0.15s,
+    scale 0.15s;
+}
+
+.botao:active {
+  scale: 0.96;
+}
+
+.botao--primario {
+  background: var(--vermelho);
+  color: #fff;
+}
+
+.botao--whats {
+  background: var(--verde);
+  color: #fff;
+}
+
+.botao--contorno {
+  border-color: currentColor;
+  background: transparent;
+}
+
+/* Hover só em dispositivos com ponteiro, para não "grudar" após um toque */
+@media (hover: hover) {
+  .botao--primario:hover {
+    background: var(--vermelho-escuro);
+  }
+
+  .botao--whats:hover {
+    background: var(--verde-escuro);
+  }
+}
+
+@media (min-width: 768px) {
+  .secao {
+    padding-block: 104px;
+  }
+}
