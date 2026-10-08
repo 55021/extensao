@@ -1,0 +1,120 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgb(255 255 255 / 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid transparent;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.header--rolou {
+  border-bottom-color: var(--borda);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.06);
+}
+
+.header__conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--altura-header);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: var(--texto-xl);
+  text-decoration: none;
+  color: var(--texto);
+}
+
+.header__logo-icone {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--vermelho);
+  color: #fff;
+}
+
+.header__menu-botao {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: none;
+  position: absolute;
+  top: var(--altura-header);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--borda);
+  box-shadow: 0 12px 24px rgb(0 0 0 / 0.08);
+}
+
+.header__nav--aberto {
+  display: block;
+}
+
+.header__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 20px 16px;
+}
+
+.header__nav a {
+  display: block;
+  padding: 12px 0;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--borda);
+}
+
+.header__nav li:last-child a {
+  border-bottom: 0;
+}
+
+@media (hover: hover) {
+  .header__nav a:hover {
+    color: var(--vermelho);
+  }
+}
+
+@media (min-width: 860px) {
+  .header__menu-botao {
+    display: none;
+  }
+
+  .header__nav {
+    display: block;
+    position: static;
+    background: none;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .header__nav ul {
+    display: flex;
+    gap: 28px;
+    padding: 0;
+  }
+
+  .header__nav a {
+    padding: 8px 0;
+    border: 0;
+  }
+}

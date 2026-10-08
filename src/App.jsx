@@ -1,3 +1,11 @@
+import Header from './components/Header'
+
 export default function App() {
-  return <h1>Mandala Extintores</h1>
+  return (
+    <>
+      <Header />
+      <main id="conteudo">
+      </main>
+    </>
+  )
 }
