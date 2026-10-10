@@ -1,0 +1,164 @@
+.hero {
+  --foco: #fff; /* anel de foco branco sobre o vermelho (5.62:1) */
+  color: #fff;
+  background: var(--vermelho);
+  overflow: hidden;
+}
+
+.hero__conteudo {
+  display: grid;
+  gap: 48px;
+  padding-block: 56px 64px;
+}
+
+.hero__titulo {
+  font-size: var(--titulo-hero);
+  line-height: 0.92;
+  max-width: 12ch;
+  margin-bottom: 0.35em;
+}
+
+.hero__descricao {
+  font-size: var(--texto-lg);
+  max-width: 44ch;
+}
+
+.hero__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.hero__botao-principal {
+  background: #fff;
+  color: var(--vermelho);
+}
+
+.hero__botao-whats {
+  color: #fff;
+}
+
+@media (hover: hover) {
+  .hero__botao-principal:hover {
+    background: var(--vermelho-claro);
+  }
+
+  .hero__botao-whats:hover {
+    background: #fff;
+    color: var(--vermelho);
+  }
+}
+
+/* ============ Manômetro ============ */
+.hero__figura {
+  margin: 0;
+  justify-self: start;
+  width: min(100%, 300px);
+}
+
+.hero__figura figcaption {
+  margin-top: 16px;
+  font-size: var(--texto-md);
+  max-width: 30ch;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.manometro {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 18px 30px rgb(0 0 0 / 0.28));
+}
+
+.manometro__aro {
+  fill: var(--grafite);
+}
+
+.manometro__aco {
+  fill: #c9ced4;
+}
+
+.manometro__mostrador {
+  fill: #fff;
+}
+
+.manometro__faixa {
+  fill: none;
+  stroke-width: 15;
+}
+
+.manometro__faixa--baixa,
+.manometro__faixa--alta {
+  stroke: var(--vermelho);
+}
+
+.manometro__faixa--ok {
+  stroke: var(--verde);
+}
+
+.manometro__marca {
+  stroke: var(--grafite);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.manometro__rotulo,
+.manometro__marca-texto {
+  font-family: var(--fonte-titulo);
+  text-anchor: middle;
+}
+
+.manometro__rotulo {
+  font-size: 13px;
+  font-weight: 700;
+  fill: var(--vermelho);
+  letter-spacing: 0.04em;
+}
+
+.manometro__marca-texto {
+  font-size: 15px;
+  font-weight: 700;
+  fill: var(--grafite);
+  letter-spacing: 0.24em;
+}
+
+.manometro__ponteiro {
+  fill: var(--grafite);
+  transform-box: view-box;
+  transform-origin: 130px 150px;
+  rotate: 6deg;
+}
+
+.manometro__pivo {
+  fill: #c9ced4;
+}
+
+/* O único movimento da página: o ponteiro sobe até o verde ao carregar */
+@media (prefers-reduced-motion: no-preference) {
+  .manometro__ponteiro {
+    animation: ponteiro-carrega 1.6s cubic-bezier(0.34, 1.5, 0.64, 1) 0.35s both;
+  }
+}
+
+@keyframes ponteiro-carrega {
+  from {
+    rotate: -58deg;
+  }
+  to {
+    rotate: 6deg;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__conteudo {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    padding-block: 96px 104px;
+  }
+
+  .hero__figura {
+    justify-self: end;
+    width: min(100%, 380px);
+  }
+}
