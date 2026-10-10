@@ -1,0 +1,35 @@
+.sobre {
+  display: grid;
+  gap: 40px;
+}
+
+.sobre__diferenciais {
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sobre__diferenciais li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: var(--texto-lg);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.sobre__check {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--verde);
+}
+
+@media (min-width: 900px) {
+  .sobre {
+    grid-template-columns: 1.3fr 1fr;
+    gap: 80px;
+  }
+}

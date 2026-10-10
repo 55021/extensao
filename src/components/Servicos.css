@@ -1,0 +1,76 @@
+.servicos__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--fundo);
+  border-radius: var(--raio);
+  border: 1px solid var(--borda);
+}
+
+/* Cada linha é um registro da ficha: ícone | serviço | prazo */
+.servico {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 4px 18px;
+  padding: 24px 20px;
+}
+
+.servico + .servico {
+  border-top: 1px solid var(--borda);
+}
+
+.servico__icone {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--vermelho-claro);
+  color: var(--vermelho);
+}
+
+.servico__titulo {
+  font-size: var(--texto-lg);
+  margin-bottom: 4px;
+}
+
+.servico__descricao {
+  margin: 0;
+  color: var(--texto-suave);
+  max-width: 60ch;
+}
+
+.servico__quando {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 0;
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-lg);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--verde-escuro);
+}
+
+.servico__quando svg {
+  flex-shrink: 0;
+}
+
+.servicos__cta {
+  margin: 40px 0 0;
+}
+
+@media (min-width: 820px) {
+  .servico {
+    grid-template-columns: 44px 1fr 15rem;
+    align-items: center;
+    gap: 28px;
+    padding: 26px 32px;
+  }
+
+  .servico__quando {
+    grid-column: auto;
+    margin: 0;
+  }
+}
