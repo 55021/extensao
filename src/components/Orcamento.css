@@ -1,0 +1,117 @@
+.orcamento {
+  display: grid;
+  gap: 40px;
+}
+
+.orcamento__passos {
+  display: grid;
+  gap: 18px;
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  counter-reset: passo;
+}
+
+/* Sequência real: o número é a informação */
+.orcamento__passos li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  counter-increment: passo;
+}
+
+.orcamento__passos li::before {
+  content: counter(passo);
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--vermelho);
+  color: #fff;
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-lg);
+  font-weight: 700;
+}
+
+.orcamento__form {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--aco);
+}
+
+.orcamento__linha {
+  display: grid;
+  gap: 18px;
+}
+
+.orcamento__campo {
+  display: grid;
+  gap: 6px;
+}
+
+.orcamento__campo label {
+  font-weight: 600;
+  font-size: var(--texto-md);
+}
+
+.orcamento__campo input,
+.orcamento__campo select,
+.orcamento__campo textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--borda-campo);
+  border-radius: 6px;
+  background: var(--fundo);
+  font-size: var(--texto-base); /* 16px evita o zoom automático no iOS */
+}
+
+.orcamento__campo textarea {
+  resize: vertical;
+}
+
+.orcamento__campo [aria-invalid='true'] {
+  border-color: var(--vermelho);
+}
+
+.orcamento__erro {
+  font-size: var(--texto-sm);
+  color: var(--vermelho);
+}
+
+.orcamento__enviar {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.orcamento__status {
+  margin: 0;
+  min-height: 1.6em;
+  font-weight: 600;
+  color: var(--verde-escuro);
+  text-align: center;
+}
+
+.orcamento__status p {
+  margin: 0;
+}
+
+@media (min-width: 560px) {
+  .orcamento__linha {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 960px) {
+  .orcamento {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: start;
+  }
+}
