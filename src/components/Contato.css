@@ -1,0 +1,71 @@
+.contato {
+  display: grid;
+  gap: 32px;
+}
+
+.contato__lista {
+  display: grid;
+  gap: 26px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contato__lista li {
+  display: flex;
+  gap: 16px;
+}
+
+.contato__lista h3 {
+  margin: 0 0 2px;
+  font-size: var(--texto-lg);
+}
+
+.contato__lista p,
+.contato__lista address {
+  margin: 0;
+  font-style: normal;
+  color: var(--texto-suave);
+}
+
+.contato__lista a {
+  font-weight: 600;
+  color: var(--vermelho);
+  overflow-wrap: anywhere;
+}
+
+.contato__icone {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--fundo);
+  color: var(--vermelho);
+}
+
+.contato__icone--whats {
+  color: var(--verde);
+}
+
+.contato__mapa {
+  min-height: 320px;
+  border-radius: var(--raio);
+  overflow: hidden;
+  border: 1px solid var(--borda);
+}
+
+.contato__mapa iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border: 0;
+}
+
+@media (min-width: 900px) {
+  .contato {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}

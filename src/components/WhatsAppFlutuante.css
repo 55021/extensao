@@ -1,0 +1,27 @@
+.whats-flutuante {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--verde);
+  color: #fff;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.25);
+  transition:
+    background-color 0.15s,
+    scale 0.15s;
+}
+
+.whats-flutuante:active {
+  scale: 0.96;
+}
+
+@media (hover: hover) {
+  .whats-flutuante:hover {
+    background: var(--verde-escuro);
+  }
+}
