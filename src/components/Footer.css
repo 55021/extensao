@@ -15,11 +15,19 @@
 }
 
 .footer__nome {
-  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
   font-family: var(--fonte-titulo);
   font-weight: 700;
   font-size: var(--texto-xl);
   color: #fff;
+}
+
+.footer__nome img {
+  width: 48px;
+  height: 48px;
 }
 
 .footer__redes {

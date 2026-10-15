@@ -35,10 +35,13 @@ export default function Header() {
     <header className={`header ${rolou ? 'header--rolou' : ''}`}>
       <div className="container header__conteudo">
         <a href="#inicio" className="header__logo" onClick={fecharMenu}>
-          <span className="header__logo-icone">
-            <Icone nome="chama" tamanho={20} />
-          </span>
-          {empresa.nome}
+          <img
+            src="/logo-mandala-extintores.png"
+            alt={empresa.nome}
+            width="489"
+            height="240"
+            className="header__logo-img"
+          />
         </a>
 
         <button

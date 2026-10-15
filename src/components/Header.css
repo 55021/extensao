@@ -25,22 +25,12 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--fonte-titulo);
-  font-weight: 700;
-  font-size: var(--texto-xl);
-  text-decoration: none;
-  color: var(--texto);
+  border-radius: 4px;
 }
 
-.header__logo-icone {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--vermelho);
-  color: #fff;
+.header__logo-img {
+  width: auto;
+  height: 56px;
 }
 
 .header__menu-botao {

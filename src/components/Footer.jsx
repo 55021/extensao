@@ -11,7 +11,10 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__conteudo">
         <div>
-          <p className="footer__nome">{empresa.nome}</p>
+          <p className="footer__nome">
+            <img src="/logo-emblema.png" alt="" width="192" height="192" />
+            {empresa.nome}
+          </p>
           <p>{empresa.descricaoCurta}</p>
         </div>
 

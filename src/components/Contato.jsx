@@ -26,6 +26,7 @@ export default function Contato() {
               </span>
               <div>
                 <h3>WhatsApp</h3>
+                <p>{empresa.whatsappExibicao}</p>
                 <a href={gerarLinkWhatsApp(mensagemPadrao)} target="_blank" rel="noopener noreferrer">
                   Falar no WhatsApp
                 </a>

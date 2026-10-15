@@ -40,11 +40,11 @@ e botão flutuante do WhatsApp.
 
 Os dados atuais são **placeholders**. Busque por `[PLACEHOLDER]` no projeto:
 
-- [ ] `src/config/empresa.js` — telefone, WhatsApp, e-mail, CNPJ, endereço, CEP, horário,
-      busca do mapa, redes sociais, lista de serviços e prazos ("quando")
+- [x] `src/config/empresa.js` — telefone, WhatsApp, e-mail, horário, endereço, CEP e mapa
+- [x] `src/config/empresa.js` — CNPJ
+- [x] Logo da empresa (cabeçalho, rodapé, favicon) em `public/`
+- [ ] `src/config/empresa.js` — redes sociais, lista de serviços e prazos ("quando")
 - [ ] `src/components/Sobre.jsx` — texto com a história real da empresa
-- [ ] `index.html` — dados estruturados (JSON-LD): telefone e endereço
-- [ ] `public/favicon.svg` — substituir pelo logo da empresa, se houver
 
 ## Deploy
 

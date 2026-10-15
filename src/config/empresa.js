@@ -12,34 +12,26 @@ export const empresa = {
   descricaoCurta:
     'Recarga, manutenção e venda de extintores no bairro de Olaria, Rio de Janeiro.',
 
-  // [PLACEHOLDER] Telefone exibido no site
-  telefone: '(21) 0000-0000',
-  // [PLACEHOLDER] WhatsApp: apenas dígitos, com código do país (55) e DDD (21)
-  whatsapp: '5521900000000',
-  // [PLACEHOLDER]
-  email: 'contato@mandalaextintores.com.br',
-  // [PLACEHOLDER]
-  cnpj: '00.000.000/0001-00',
+  // Fonte: perfil da loja no Google
+  telefone: '(21) 2562-4108',
+  // WhatsApp (21) 96421-4104: apenas dígitos, com código do país (55) e DDD (21)
+  whatsapp: '5521964214104',
+  whatsappExibicao: '(21) 96421-4104',
+  email: 'mandala.novafire@bol.com.br',
+  cnpj: '09.188.600/0001-08',
 
   endereco: {
-    // [PLACEHOLDER] Rua e número
-    logradouro: 'Rua Exemplo, 123',
+    logradouro: 'Rua Antônio Rêgo, 856',
     bairro: 'Olaria',
     cidade: 'Rio de Janeiro',
     uf: 'RJ',
-    // [PLACEHOLDER]
-    cep: '21000-000',
+    cep: '21073-312',
   },
 
-  // [PLACEHOLDER]
-  horario: [
-    { dias: 'Segunda a sexta', horas: '8h às 18h' },
-    { dias: 'Sábado', horas: '8h às 12h' },
-  ],
+  horario: [{ dias: 'Segunda a sexta', horas: '8h às 17h' }],
 
-  // [PLACEHOLDER] Busca usada no mapa incorporado do Google Maps.
-  // Pode ser trocada pelo endereço completo da loja.
-  buscaMapa: 'Olaria, Rio de Janeiro - RJ',
+  // Busca usada no mapa incorporado do Google Maps
+  buscaMapa: 'Mandala Extintores, Rua Antônio Rêgo, 856 - Olaria, Rio de Janeiro - RJ, 21073-312',
 
   // [PLACEHOLDER] Deixe vazio ('') para ocultar a rede social
   redes: {
