@@ -6,6 +6,8 @@ Homepage da **Mandala Extintores** (Olaria, Rio de Janeiro – RJ), desenvolvida
 **Tema:** A integração de uma empresa de serviços de extintores ao mercado digital através do
 estabelecimento de sua homepage. **ODS 8** – Trabalho decente e crescimento econômico.
 
+**Site publicado:** https://mandala-extintores.vercel.app
+
 ## Tecnologias
 
 - HTML5, CSS3 (sem frameworks de UI) e JavaScript
@@ -48,5 +50,10 @@ Os dados atuais são **placeholders**. Busque por `[PLACEHOLDER]` no projeto:
 
 ## Deploy
 
-O build (`npm run build`) gera arquivos estáticos em `dist/`, compatíveis com Vercel, Netlify ou
-GitHub Pages (neste último, configurar `base` em `vite.config.js`).
+O site está hospedado na Vercel (projeto `mandala-extintores`). Para publicar uma nova versão:
+
+```bash
+npx vercel@latest deploy --prod
+```
+
+O build (`npm run build`) gera arquivos estáticos em `dist/`.
