@@ -31,20 +31,13 @@
 }
 
 .hero__selos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 20px;
   margin-top: 28px;
-  padding: 0;
-  list-style: none;
   font-size: var(--texto-md);
   font-weight: 500;
 }
 
-.hero__selos li + li::before {
-  content: '·';
-  margin-right: 10px;
-  margin-left: -10px;
+.hero__selos span {
+  white-space: nowrap;
 }
 
 .hero__botao-principal {

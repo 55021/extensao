@@ -83,13 +83,13 @@ export default function Hero() {
               Falar no WhatsApp
             </a>
           </div>
-          <ul className="hero__selos">
-            <li>Selo INMETRO</li>
-            <li>ABNT NBR 12962</li>
-            <li>
+          {/* Cada selo carrega o "·" seguinte, para o separador nunca abrir uma linha */}
+          <p className="hero__selos">
+            <span>Selo INMETRO&nbsp;·</span> <span>ABNT NBR 12962&nbsp;·</span>{' '}
+            <span>
               {empresa.horario[0].dias}, {empresa.horario[0].horas}
-            </li>
-          </ul>
+            </span>
+          </p>
         </div>
 
         <figure className="hero__figura">
