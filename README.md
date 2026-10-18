@@ -38,15 +38,11 @@ src/
 Seções: Início, Sobre, Serviços, Orçamento (formulário enviado via WhatsApp), Contato (com mapa)
 e botão flutuante do WhatsApp.
 
-## Trocar os dados de exemplo pelos dados reais
+## Dados da empresa
 
-Os dados atuais são **placeholders**. Busque por `[PLACEHOLDER]` no projeto:
-
-- [x] `src/config/empresa.js` — telefone, WhatsApp, e-mail, horário, endereço, CEP e mapa
-- [x] `src/config/empresa.js` — CNPJ
-- [x] Logo da empresa (cabeçalho, rodapé, favicon) em `public/`
-- [ ] `src/config/empresa.js` — redes sociais, lista de serviços e prazos ("quando")
-- [ ] `src/components/Sobre.jsx` — texto com a história real da empresa
+Todos os dados exibidos (contatos, endereço, horário, CNPJ, serviços e prazos) ficam em
+`src/config/empresa.js` e foram confirmados com os proprietários. As redes sociais ficam
+ocultas enquanto os campos estiverem vazios.
 
 ## Deploy
 

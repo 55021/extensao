@@ -1,9 +1,8 @@
 // ============================================================
 // DADOS DA EMPRESA
-// Este é o ÚNICO arquivo que precisa ser editado para trocar
-// os dados de exemplo (placeholders) pelos dados reais.
-// Itens marcados com [PLACEHOLDER] devem ser confirmados com
-// os proprietários.
+// Este é o ÚNICO arquivo que precisa ser editado para atualizar
+// os dados exibidos no site. Dados confirmados com os
+// proprietários em outubro de 2026.
 // ============================================================
 
 export const empresa = {
@@ -33,13 +32,13 @@ export const empresa = {
   // Busca usada no mapa incorporado do Google Maps
   buscaMapa: 'Mandala Extintores, Rua Antônio Rêgo, 856 - Olaria, Rio de Janeiro - RJ, 21073-312',
 
-  // [PLACEHOLDER] Deixe vazio ('') para ocultar a rede social
+  // Deixe vazio ('') para ocultar a rede social
   redes: {
     instagram: '',
     facebook: '',
   },
 
-  // [PLACEHOLDER] Confirmar os prazos com os proprietários (referência: ABNT NBR 12962 e 12779)
+  // Prazos conforme ABNT NBR 12962 (extintores) e NBR 12779 (mangueiras)
   servicos: [
     {
       id: 'recarga',

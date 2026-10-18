@@ -8,7 +8,6 @@ export default function Sobre() {
       <div className="container sobre">
         <div>
           <h2 className="secao__titulo">Sobre a {empresa.nome}</h2>
-          {/* [PLACEHOLDER] Texto a ser ajustado com a história real contada pelos proprietários */}
           <p className="secao__texto">
             A {empresa.nome} é uma empresa do bairro de {empresa.endereco.bairro}, na Zona Norte
             do {empresa.endereco.cidade}, especializada em extintores e equipamentos de combate
