@@ -7,7 +7,7 @@ export default function Sobre() {
     <section id="sobre" className="secao">
       <div className="container sobre">
         <div>
-          <h2 className="secao__titulo">Segurança contra incêndio feita por vizinhos</h2>
+          <h2 className="secao__titulo">Sobre a {empresa.nome}</h2>
           {/* [PLACEHOLDER] Texto a ser ajustado com a história real contada pelos proprietários */}
           <p className="secao__texto">
             A {empresa.nome} é uma empresa do bairro de {empresa.endereco.bairro}, na Zona Norte
@@ -16,9 +16,8 @@ export default function Sobre() {
             compromisso de manter cada cliente protegido e regularizado.
           </p>
           <p className="secao__texto">
-            Nosso trabalho segue as normas técnicas da ABNT e os requisitos do INMETRO, para que
-            você tenha tranquilidade na hora da vistoria e, acima de tudo, equipamentos que
-            funcionam quando mais importa.
+            Os serviços seguem as normas técnicas da ABNT e os requisitos do INMETRO, com
+            orientação sobre prazos e documentação para a vistoria do Corpo de Bombeiros.
           </p>
         </div>
 

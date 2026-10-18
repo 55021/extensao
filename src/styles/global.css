@@ -30,7 +30,7 @@
   --texto-lg: 1.1875rem; /* 19px – títulos de linha, introduções */
   --texto-xl: 1.5rem; /* 24px – marca */
   --titulo-secao: clamp(2.25rem, 5vw, 3.25rem);
-  --titulo-hero: clamp(3rem, 9vw, 5.75rem);
+  --titulo-hero: clamp(2.5rem, 6vw, 4.25rem);
 
   --raio: 10px;
   --largura-max: 1160px;

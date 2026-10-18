@@ -62,11 +62,12 @@ export default function Hero() {
     <section id="inicio" className="hero">
       <div className="container hero__conteudo">
         <div className="hero__texto">
-          <h1 className="hero__titulo">Seu extintor está no verde?</h1>
+          <h1 className="hero__titulo">
+            Recarga, manutenção e venda de extintores em {empresa.endereco.bairro}
+          </h1>
           <p className="hero__descricao">
-            Se o ponteiro do manômetro saiu da faixa verde, é hora de recarregar. A{' '}
-            {empresa.nome} faz recarga, manutenção e venda de extintores em{' '}
-            {empresa.endereco.bairro} e na Zona Norte do {empresa.endereco.cidade}.
+            Atendemos residências, comércios, condomínios e veículos na Zona Norte do{' '}
+            {empresa.endereco.cidade}, com serviços conforme a ABNT NBR 12962 e selo do INMETRO.
           </p>
           <div className="hero__acoes">
             <a href="#orcamento" className="botao hero__botao-principal">
@@ -82,11 +83,17 @@ export default function Hero() {
               Falar no WhatsApp
             </a>
           </div>
+          <ul className="hero__selos">
+            <li>Selo INMETRO</li>
+            <li>ABNT NBR 12962</li>
+            <li>
+              {empresa.horario[0].dias}, {empresa.horario[0].horas}
+            </li>
+          </ul>
         </div>
 
         <figure className="hero__figura">
           <Manometro />
-          <figcaption>Todo extintor tem um. A faixa verde indica carga correta.</figcaption>
         </figure>
       </div>
     </section>

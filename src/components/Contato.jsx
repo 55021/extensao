@@ -12,9 +12,10 @@ export default function Contato() {
     <section id="contato" className="secao secao--aco">
       <div className="container">
         <div className="secao__cabecalho">
-          <h2 className="secao__titulo">Fale com a gente</h2>
+          <h2 className="secao__titulo">Contato</h2>
           <p className="secao__texto">
-            Estamos em {empresa.endereco.bairro}, prontos para atender você.
+            {empresa.endereco.logradouro}, {empresa.endereco.bairro}. Atendimento de{' '}
+            {empresa.horario[0].dias.toLowerCase()}, das {empresa.horario[0].horas}.
           </p>
         </div>
 

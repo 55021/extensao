@@ -83,15 +83,15 @@ export default function Orcamento() {
     <section id="orcamento" className="secao">
       <div className="container orcamento">
         <div className="orcamento__intro">
-          <h2 className="secao__titulo">Peça seu orçamento sem compromisso</h2>
+          <h2 className="secao__titulo">Solicite um orçamento</h2>
           <p className="secao__texto">
-            Preencha o formulário e o pedido vai direto para o nosso WhatsApp. Respondemos
-            dentro do horário de atendimento.
+            Preencha os dados abaixo. O pedido é enviado ao WhatsApp da loja e respondido em
+            horário comercial.
           </p>
           <ol className="orcamento__passos">
             <li>Preencha seus dados</li>
             <li>Envie pelo WhatsApp</li>
-            <li>Receba o valor e combine o atendimento</li>
+            <li>Receba o orçamento e agende o serviço</li>
           </ol>
         </div>
 

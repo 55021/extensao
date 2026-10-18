@@ -7,10 +7,10 @@ export default function Servicos() {
     <section id="servicos" className="secao secao--aco">
       <div className="container">
         <div className="secao__cabecalho">
-          <h2 className="secao__titulo">Serviços e prazos</h2>
+          <h2 className="secao__titulo">Serviços</h2>
           <p className="secao__texto">
-            Extintor vencido reprova a vistoria do Corpo de Bombeiros. Veja o que fazemos e de
-            quanto em quanto tempo cada serviço precisa ser feito.
+            Confira os serviços oferecidos e a periodicidade recomendada para cada um, de acordo
+            com as normas técnicas.
           </p>
         </div>
 

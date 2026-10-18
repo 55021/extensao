@@ -13,8 +13,8 @@
 
 .hero__titulo {
   font-size: var(--titulo-hero);
-  line-height: 0.92;
-  max-width: 12ch;
+  line-height: 1;
+  max-width: 20ch;
   margin-bottom: 0.35em;
 }
 
@@ -28,6 +28,23 @@
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 32px;
+}
+
+.hero__selos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+  font-size: var(--texto-md);
+  font-weight: 500;
+}
+
+.hero__selos li + li::before {
+  content: '·';
+  margin-right: 10px;
+  margin-left: -10px;
 }
 
 .hero__botao-principal {
@@ -55,14 +72,6 @@
   margin: 0;
   justify-self: start;
   width: min(100%, 300px);
-}
-
-.hero__figura figcaption {
-  margin-top: 16px;
-  font-size: var(--texto-md);
-  max-width: 30ch;
-  margin-inline: auto;
-  text-align: center;
 }
 
 .manometro {
